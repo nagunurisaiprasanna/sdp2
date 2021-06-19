@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Supply Chain Management</title>
+</head>
+<style >
+	h1 ,h2,h3  {
+		color: rgb(204, 180, 180);
+	
+	
+	}
+	marquee{
+		color: rgb(160, 189, 137);
+		font-size:160%
+		
+		}
+	div{
+		font-size: 200%
+		
+	}
+	body {
+        background-color: dimgray;
+
+    background-repeat: no-repeat;
+     background-size: cover;
+      background-attachment: fixed;
+}
+img {
+  border-radius: 50%;
+}
+p,li{
+	color: rgba(102, 126, 172, 0.966);
+	font-size: 25px;
+	font-style: italic;
+}
+button{
+	background-color: #f6efe9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+	font-size: 16px;
+}
+
+</style>
+<body > 
+<h1 align="Center" >
+Supply Chain Management System
+</h1>
+<body id="bg" style="background-image: url('https://www.cedarfielddesign.com/wp-content/uploads/2016/07/slider1-1.jpg');"></body>
+
+
+<marquee width="100%" direction="left" height="50px" size="250">
+Welcome to our Supply Chain Management System 
+</marquee>
+<div align="right">
+<button><a href="{% url 'home' %}" >Home  &nbsp;&nbsp; </a></button>
+
+<button><a href="{% url 'signup' %}" >  SignUp&nbsp; &nbsp; </a></button>
+
+<button><a href="{% url 'login' %}" >  login&nbsp; &nbsp; </a></button>
+
+<button><a href="{% url 'contactus' %}"  >  ContactUs &nbsp; &nbsp; </a></button>
+<button><a href="{% url 'Aboutus' %}" >About Us </a></button>
+</div>
+
+<img align="left" src="https://online.kettering.edu/sites/default/files/styles/blogfeature_large/public/field/image/supply-chain-operations-management.jpg?itok=S6Fs2XME" alt="Supply chain Management" style="width:350px;height:340px;">
+ &nbsp;<p ><b>What Is Supply Chain Management (SCM)?</b><br>
+	Supply chain management is the management of the flow of goods and services and includes all processes that transform raw materials into final products. It involves the active streamlining of a business's supply-side activities to maximize customer value and gain a competitive advantage in the marketplace.
+</p>
+
+<br<img align="right" src="https://base.imgix.net/files/base/ebm/industryweek/image/2020/10/Feature.5f98eeb4e61b4.png?auto=format&fit=max&w=1200" alt="Supply chain Management" style="width:350px;height:340px;">
+
+
+<img  align="right"src="data:image/jpeg;base64,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" alt="recycling" style="width:250px;height:340px;">
+<br>
+<p >The major components of the supply chain management system consists of :
+
+	<li>The plan or strategy</li>
+	<li>The source (of raw materials or services)</li>
+	<li>Manufacturing (focused on productivity and efficiency)</li>
+	<li>Delivery and logistics</li>
+	<li>
+		The return system (unwanted products)</li>
+	<li>The supply chain manager tries to minimize shortages and keep costs down.</li>
+  
+	
+</p>
+
+
+<br>
+
+<img src="https://www.historic-newspapers.co.uk/app/uploads/2019/07/Old-Newspapers.jpg" alt="recycling" style="width:250px;height:340px;">
+&nbsp;&nbsp;&nbsp;<img src="https://www.oxfordcollegeofprocurementandsupply.com/wp-content/uploads/2017/03/Supply-Chain-Management-.jpg" style="width:250px;height:340px;"> &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://nationalmarker.com/upload/products/HH95.jpg" alt="recycling" style="width:250px;height:340px;">&nbsp;&nbsp;
+<img src="https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image/public/media/images/art-attachment-background-boat-40906.jpeg?itok=mQP6NcPZ" alt="recycling" style="width:250px;height:340px;">
+<p> <b> News Paper Recycling  &ensp;Waste Paper Recycling Supply Chain Management Reuse Reduce Recycle Recycling helps protect the  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;environment</b> </p>
+<p><h4 align="left">Project Description </h4>
+
+	In this website we supply the products to the customers </p>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+    <h1 align="Center" >
+    
+        SUPPLY CHAIN MANAGEMENT
+    </h1>
+    
+    <marquee width="100%" direction="left" height="50px" size="550">
+    Welcome to our Supply Chain Management System 
+    </marquee>
+    <div align="right">
+    <button><a href="{% url 'home' %}" >Home  &nbsp;&nbsp; </a></button>
+    
+    <button><a href="{% url 'signup' %}" >  SignUp&nbsp; &nbsp; </a></button>
+    
+    <button><a href="{% url 'login' %}" >  login&nbsp; &nbsp; </a></button>
+    
+    <button><a href="{% url 'contactus' %}"  >  ContactUs &nbsp; &nbsp; </a></button>
+    <button><a href="{% url 'Aboutus' %}" >About Us </a></button>
+    <button><a href="https://forms.gle/cQED2ACDtK7nDpSz6">Feedback</a></button>
+    <button><a href="{% url 'signup2' %}" >  visualization </a></button>
+    </div >
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>We are going to supply the product to the customers.</p>
+  <p></p>
+</div>
+
+<h2 style="text-align:center">Some of our Suppliers and collaberators </h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+    
+      <div class="container">
+        <h2>Ravi kumar</h2>
+        <p class="title">KLUNIVERSITY</p>
+        <p>one of our regular suppliers</p>
+        <p>ravi@example.com</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    
+      <div class="container">
+        <h2>john </h2>
+        <p class="title">SRM</p>
+        <p>one of our collaborators</p>
+        <p>john@example.com</p>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      
+      <div class="container">
+        <h2>Jyothi</h2>
+        <p class="title">KLUNIVERSITYr</p>
+        <p>one of our suppliers</p>
+        <p>jyothi@example.com</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
